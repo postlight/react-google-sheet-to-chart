@@ -11,8 +11,8 @@ Check out the [Live Demo!](https://robochart.netlify.com/) or the [Live Demo Git
     > npm install @postlight/react-google-sheet-chart --save
 
 2. Generate a Google API Key: https://console.cloud.google.com/apis/credentials
-3. Create `REACT_APP_CHART_TOKEN` field in your `.env` file containing the generated API Key
-4. Create `REACT_APP_GSHEETS_API` field in your `.env` file containing the Google Sheets API URL: `https://sheets.googleapis.com/v4/spreadsheets/`
+3. Add `REACT_APP_CHART_TOKEN` environment variable containing the generated API Key
+4. Add `REACT_APP_GSHEETS_API` environment variable containing the Google Sheets API URL: `https://sheets.googleapis.com/v4/spreadsheets/`
 
 ## How to use
 
