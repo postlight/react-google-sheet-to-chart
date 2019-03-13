@@ -2,7 +2,7 @@
 
 Transform Google sheets to pretty charts using this React Component!
 
-Check out the [Live Demo!](https://robochart.netlify.com/)
+Check out the [Live Demo!](https://robochart.netlify.com/) or the [Live Demo GitHub Repository](https://github.com/postlight/robo-chart-web)
 
 ## How to Install
 
