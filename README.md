@@ -1,4 +1,4 @@
-# react-google-sheet-chart component
+![Robo Chart preview](static/images/robo-chart.png)
 
 Transform Google sheets to pretty charts using this React Component!
 
@@ -43,10 +43,6 @@ You can try it out by [Creating a react app](https://github.com/facebook/create-
     }
     export default App;
 ```
-
-Result:
-
-![Robo Chart preview](static/images/robo-chart.png)
 
 Other possible props:
 
