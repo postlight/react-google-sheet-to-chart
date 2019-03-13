@@ -21,11 +21,15 @@ Import RoboChart react component then initialize it with at least two props:
 -   `id`: contains the Spreadsheet ID, e.g. `1RE_JYUCXBXY2LNV5Tp5GegLnMue-CpfTVMxjdudZ8Js` (extractable from a Google sheet URL)
 -   `sheet`: containing the sheet name to read from
 
-You can try it out by [Creating a react app](https://github.com/facebook/create-react-app) and pasting the following in `App.js`:
+You can try it out by:
+
+1. [Creating a react app](https://github.com/facebook/create-react-app)
+2. Installing the package by following `How to Install` section
+3. Pasting the following in `App.js`:
 
 ```
     import React, { Component } from 'react';
-    import RoboChart from 'react-google-sheet-chart';
+    import RoboChart from '@postlight/react-google-sheet-chart';
     import './App.css';
 
     const style = { width: '1200px', margin: '0 auto' };
