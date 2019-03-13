@@ -1,5 +1,5 @@
 {
-    "name": "react-google-sheet-chart",
+    "name": "@postlight/react-google-sheet-chart",
     "version": "0.1.0",
     "description": "Transform Google sheets to pretty charts!",
     "main": "build/index.js",
@@ -17,10 +17,26 @@
         "start": "webpack --watch",
         "build": "webpack"
     },
-    "author": {
-        "name": "Alexi Akl",
-        "email": "alexi.akl@postlight.com"
+    "author": "Postlight",
+    "contributors": [
+        "Alexi Akl <alexi.akl@postlight.com>"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/postlight/react-google-sheet-chart"
     },
+    "homepage": "https://github.com/postlight/react-google-sheet-chart#readme",
+    "bugs": {
+        "url": "https://github.com/postlight/react-google-sheet-chart/issues"
+    },
+    "keywords": [
+        "Sheet",
+        "Chart",
+        "Google",
+        "React",
+        "Component"
+    ],
+    "license": "Apache-2.0",
     "devDependencies": {
         "@babel/cli": "^7.2.3",
         "@babel/core": "^7.3.4",
