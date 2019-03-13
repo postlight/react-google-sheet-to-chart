@@ -59,6 +59,18 @@ Other possible props:
 -   `type` one of: "line", "bar", "horizontalBar", "stacked", "pie", "semi-pie", "doughnut", "semi-doughnut"
 -   `colors` e.g. {['#a1a1a1', '#434343', '#ff0055']}
 
+Another Example:
+
+```
+    <RoboChart
+        id="1RE_JYUCXBXY2LNV5Tp5GegLnMue-CpfTVMxjdudZ8Js"
+        sheet="Companies Values"
+        type="semi-pie"
+        title="Companies values in Billion $"
+        colors={['#a1a1a1', '#995500', '#990055', '#009955']}
+    />
+```
+
 ## Spreadsheet format
 
 In order to successfuly generate a chart, the Spreadsheet should have Row titles, Column titles and Values, example:
