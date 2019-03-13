@@ -1,0 +1,34 @@
+{
+    "name": "react-google-sheet-chart",
+    "version": "0.1.0",
+    "description": "Transform Google sheets to pretty charts!",
+    "main": "build/index.js",
+    "dependencies": {
+        "react": "^16.8.4",
+        "react-dom": "^16.8.4",
+        "axios": "^0.18.0",
+        "webpack": "^4.29.6",
+        "react-chartjs-2": "^2.7.4",
+        "chart.js": "^2.7.3",
+        "randomcolor": "^0.5.4"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack --watch",
+        "build": "webpack"
+    },
+    "author": {
+        "name": "Alexi Akl",
+        "email": "alexi.akl@postlight.com"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.2.3",
+        "@babel/core": "^7.3.4",
+        "babel-loader": "^8.0.5",
+        "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
+        "@babel/plugin-transform-react-jsx": "^7.3.0",
+        "@babel/plugin-proposal-class-properties": "^7.3.4",
+        "@babel/preset-env": "^7.3.4",
+        "webpack-cli": "^3.2.3"
+    }
+}
