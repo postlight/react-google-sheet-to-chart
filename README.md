@@ -1,6 +1,8 @@
 # react-google-sheet-chart component
 
-Transform Google sheets to pretty charts using this React Component! Check out the [Live Demo](https://robochart.netlify.com/)
+Transform Google sheets to pretty charts using this React Component!
+
+Check out the [Live Demo!](https://robochart.netlify.com/)
 
 ## How to Install
 
@@ -48,14 +50,14 @@ Result:
 
 Other possible props:
 
--   start, e.g. "A5"
--   end, e.g. "E15"
--   title, e.g. "My Accounts"
--   flipAxis, e.g {false}
--   startFrom, e.g. {0}
--   stacked, e.g. {false}
--   type, one of: "line", "bar", "horizontalBar", "stacked", "pie", "semi-pie", "doughnut", "semi-doughnut"
--   colors, e.g. {['#a1a1a1', '#434343', '#ff0055']}
+-   `start` e.g. "A5"
+-   `end` e.g. "E15"
+-   `title` e.g. "My Accounts"
+-   `flipAxis` e.g {false}
+-   `startFrom` e.g. {0}
+-   `stacked` e.g. {false}
+-   `type` one of: "line", "bar", "horizontalBar", "stacked", "pie", "semi-pie", "doughnut", "semi-doughnut"
+-   `colors` e.g. {['#a1a1a1', '#434343', '#ff0055']}
 
 ## Spreadsheet format
 
