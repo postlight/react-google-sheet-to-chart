@@ -26,12 +26,12 @@ export default class SmartChart extends Component {
      */
     runQuery() {
         const { id, sheet, start, end } = this.props;
-        const { REACT_APP_TOKEN, REACT_APP_API } = process.env;
+        const { REACT_APP_CHART_TOKEN, REACT_APP_GSHEETS_API } = process.env;
         if (id && id.length > 5 && sheet && sheet.length > 0) {
-            let url = `${REACT_APP_API}${id}/values/${sheet}?key=${REACT_APP_TOKEN}`;
+            let url = `${REACT_APP_GSHEETS_API}${id}/values/${sheet}?key=${REACT_APP_CHART_TOKEN}`;
             if (start && start.length > 0 && end && end.length > 0) {
                 const grid = `!${start}:${end}`;
-                url = `${REACT_APP_API}${id}/values/${sheet}${grid}?key=${REACT_APP_TOKEN}`;
+                url = `${REACT_APP_GSHEETS_API}${id}/values/${sheet}${grid}?key=${REACT_APP_CHART_TOKEN}`;
             }
 
             this.setState({
