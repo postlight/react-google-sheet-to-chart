@@ -14,17 +14,17 @@ Check out the [Live Demo!](https://robochart.netlify.com/) or the [Live Demo Git
 
 -   Make sure you have a Google sheet document containing the data you wish to plot, check [the format](#spreadsheet-format) you need to use
 
--   Import the react component and initialize it with at least the three required props:
+-   Import the react component and initialize it with at least three required props:
 
-    -   `id`: The Spreadsheet ID, e.g. `1RE_JYUCXBXY2LNV5Tp5GegLnMue-CpfTVMxjdudZ8Js` (extractable from a Google sheet URL)
+    -   `id`: Spreadsheet ID, e.g. `1RE_JYUCXBXY2LNV5Tp5GegLnMue-CpfTVMxjdudZ8Js` (extractable from a Google sheet URL)
     -   `sheet`: Sheet name to parse data from, e.g. `Sheet1`
     -   `token`: The generated Google API Key
 
 ## Quick setup
 
 1. [Create a react app](https://github.com/facebook/create-react-app)
-2. Install the package by following `How to Install & Use` section
-3. Paste the following in `App.js`:
+2. Install the package `npm install @postlight/react-google-sheet-to-chart --save`
+3. Paste the following in `App.js` and replace `GOOGLE_SPREADSHEET_ID` and `GENERATED_GOOGLE_API_KEY` with appropriate values:
 
 ```
     import React, { Component } from 'react';
@@ -37,8 +37,8 @@ Check out the [Live Demo!](https://robochart.netlify.com/) or the [Live Demo Git
             return (
                 <div style={style}>
                     <RoboChart
-                        id="1RE_JYUCXBXY2LNV5Tp5GegLnMue-CpfTVMxjdudZ8Js"
-                        sheet="Accounting"
+                        id="GOOGLE_SPREADSHEET_ID"
+                        sheet="Sheet1"
                         token="GENERATED_GOOGLE_API_KEY"
                     />
                 </div>
