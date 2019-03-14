@@ -60,7 +60,7 @@ Check out the [Live Demo!](https://robochart.netlify.com/) or the [Live Demo Git
     export default App;
 ```
 
-**Other possible props:**
+## Other possible props
 
 -   `start` e.g. "A5"
 -   `end` e.g. "E15"
@@ -71,11 +71,11 @@ Check out the [Live Demo!](https://robochart.netlify.com/) or the [Live Demo Git
 -   `type` one of: "line", "bar", "horizontalBar", "stacked", "pie", "semi-pie", "doughnut", "semi-doughnut"
 -   `colors` e.g. {['#a1a1a1', '#434343', '#ff0055']}
 
-Another Example:
+Example:
 
 ```
     <RoboChart
-        id="1RE_JYUCXBXY2LNV5Tp5GegLnMue-CpfTVMxjdudZ8Js"
+        id="GOOGLE_SPREADSHEET_ID"
         sheet="Companies Values"
         token="GENERATED_GOOGLE_API_KEY"
         type="semi-pie"
