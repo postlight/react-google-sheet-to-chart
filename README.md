@@ -28,10 +28,10 @@ Finally, import the React component and initialize it with at least three requir
   - `sheet`: Sheet name to parse data from, e.g. `Sheet1`
   - `token`: The Google API key you created above
 
-```
+```javascript
     import RoboChart from '@postlight/react-google-sheet-to-chart';
 
-    ...
+    // ...your component code and then...
 
     <RoboChart
         id="GOOGLE_SPREADSHEET_ID"
