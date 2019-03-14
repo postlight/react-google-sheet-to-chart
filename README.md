@@ -40,13 +40,13 @@ import RoboChart from '@postlight/react-google-sheet-to-chart';
 />
 ```
 
-## Quick setup
+## Quick setup in an app
 
 1. [Create a React app](https://github.com/facebook/create-react-app)
 2. Install the package `npm install @postlight/react-google-sheet-to-chart --save`
 3. Paste the following in `App.js` and replace `GOOGLE_SPREADSHEET_ID` and `GENERATED_GOOGLE_API_KEY` with appropriate values:
 
-```
+```javascript
 import React, { Component } from 'react';
 import RoboChart from '@postlight/react-google-sheet-to-chart';
 import './App.css';
@@ -81,15 +81,15 @@ export default App;
 
 Example:
 
-```
-    <RoboChart
-        id="GOOGLE_SPREADSHEET_ID"
-        sheet="Companies Values"
-        token="GENERATED_GOOGLE_API_KEY"
-        type="semi-pie"
-        title="Companies values in Billion $"
-        colors={['#a1a1a1', '#995500', '#990055', '#009955']}
-    />
+```javascript
+<RoboChart
+    id="GOOGLE_SPREADSHEET_ID"
+    sheet="Companies Values"
+    token="GENERATED_GOOGLE_API_KEY"
+    type="semi-pie"
+    title="Companies values in Billion $"
+    colors={['#a1a1a1', '#995500', '#990055', '#009955']}
+/>
 ```
 
 ![Robo Chart preview](https://raw.githubusercontent.com/postlight/react-google-sheet-to-chart/master/static/images/robo-chart-2.png)
