@@ -15,7 +15,7 @@ const getBarReverseChartData = (data, stacked, colors) => {
     info: [],
     annotations: [],
     options,
-    colors: [],
+    colors: []
   };
 
   let columnCount = 0;
@@ -59,10 +59,10 @@ const getBarReverseChartData = (data, stacked, colors) => {
   chartData.options.scales.xAxes[0].labels = chartData.labels;
   chartData.options.scales.xAxes[0].stacked = stacked;
   chartData.options.scales.yAxes[0].ticks = {
-    beginAtZero: true,
+    beginAtZero: true
   };
   chartData.options.scales.xAxes[0].ticks = {
-    beginAtZero: true,
+    beginAtZero: true
   };
   return chartData;
 };

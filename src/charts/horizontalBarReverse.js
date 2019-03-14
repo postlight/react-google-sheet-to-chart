@@ -12,7 +12,7 @@ const getHorizontalBarReverseChartData = (data, colors) => {
     labels: [],
     datasets: [],
     options,
-    colors: [],
+    colors: []
   };
 
   let columnCount = 0;

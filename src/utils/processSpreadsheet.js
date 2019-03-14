@@ -14,7 +14,7 @@ const processSpreadsheet = (values, startr = 0, startc = 0) => {
     start: '',
     end: '',
     startr: 0,
-    startc: 0,
+    startc: 0
   };
   let rowstart = -1;
   let colstart = 999999999;
