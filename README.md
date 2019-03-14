@@ -4,32 +4,31 @@ Transform Google sheets to pretty charts using this React Component!
 
 Check out the [Live Demo!](https://robochart.netlify.com/) or the [Live Demo GitHub Repository](https://github.com/postlight/robo-chart-web)
 
-## How to Install
+## How to Install & Use
 
-1. The package can be installed via NPM:
+-   The package can be installed via NPM:
 
-    > npm install @postlight/react-google-sheet-chart --save
+    > npm install @postlight/react-google-sheet-to-chart --save
 
-2. Generate a Google API Key: https://console.cloud.google.com/apis/credentials
-3. Add `REACT_APP_CHART_TOKEN` environment variable containing the generated API Key
-4. Add `REACT_APP_GSHEETS_API` environment variable containing the Google Sheets API URL: `https://sheets.googleapis.com/v4/spreadsheets/`
+-   Generate a Google API Key: https://console.cloud.google.com/apis/credentials
 
-## How to use
+-   Make sure you have a Google sheet document containing the data you wish to plot, check [the format](#spreadsheet-format) you need to use
 
-Import RoboChart react component then initialize it with at least two props:
+-   Import the react component and initialize it with at least the three required props:
 
--   `id`: contains the Spreadsheet ID, e.g. `1RE_JYUCXBXY2LNV5Tp5GegLnMue-CpfTVMxjdudZ8Js` (extractable from a Google sheet URL)
--   `sheet`: containing the sheet name to read from
+    -   `id`: The Spreadsheet ID, e.g. `1RE_JYUCXBXY2LNV5Tp5GegLnMue-CpfTVMxjdudZ8Js` (extractable from a Google sheet URL)
+    -   `sheet`: Sheet name to parse data from, e.g. `Sheet1`
+    -   `token`: The generated Google API Key
 
-You can try it out by:
+## Quick setup
 
-1. [Creating a react app](https://github.com/facebook/create-react-app)
-2. Installing the package by following `How to Install` section
-3. Pasting the following in `App.js`:
+1. [Create a react app](https://github.com/facebook/create-react-app)
+2. Install the package by following `How to Install & Use` section
+3. Paste the following in `App.js`:
 
 ```
     import React, { Component } from 'react';
-    import RoboChart from '@postlight/react-google-sheet-chart';
+    import RoboChart from '@postlight/react-google-sheet-to-chart';
     import './App.css';
 
     const style = { width: '1200px', margin: '0 auto' };
@@ -40,6 +39,7 @@ You can try it out by:
                     <RoboChart
                         id="1RE_JYUCXBXY2LNV5Tp5GegLnMue-CpfTVMxjdudZ8Js"
                         sheet="Accounting"
+                        token="GENERATED_GOOGLE_API_KEY"
                     />
                 </div>
             );
@@ -48,7 +48,7 @@ You can try it out by:
     export default App;
 ```
 
-Other possible props:
+**Other possible props:**
 
 -   `start` e.g. "A5"
 -   `end` e.g. "E15"
@@ -65,6 +65,7 @@ Another Example:
     <RoboChart
         id="1RE_JYUCXBXY2LNV5Tp5GegLnMue-CpfTVMxjdudZ8Js"
         sheet="Companies Values"
+        token="GENERATED_GOOGLE_API_KEY"
         type="semi-pie"
         title="Companies values in Billion $"
         colors={['#a1a1a1', '#995500', '#990055', '#009955']}

@@ -3,6 +3,7 @@ import processSpreadsheet from './utils/processSpreadsheet';
 import getChart from './chart';
 import axios from 'axios';
 
+const GSHEETS_API = 'https://sheets.googleapis.com/v4/spreadsheets/';
 /**
  * SmartChart component
  */
@@ -25,13 +26,19 @@ export default class SmartChart extends Component {
      * Compose and run query using app state
      */
     runQuery() {
-        const { id, sheet, start, end } = this.props;
-        const { REACT_APP_CHART_TOKEN, REACT_APP_GSHEETS_API } = process.env;
-        if (id && id.length > 5 && sheet && sheet.length > 0) {
-            let url = `${REACT_APP_GSHEETS_API}${id}/values/${sheet}?key=${REACT_APP_CHART_TOKEN}`;
+        const { id, sheet, start, end, token } = this.props;
+        if (
+            id &&
+            id.length > 5 &&
+            sheet &&
+            sheet.length > 0 &&
+            token &&
+            token.length > 0
+        ) {
+            let url = `${GSHEETS_API}${id}/values/${sheet}?key=${token}`;
             if (start && start.length > 0 && end && end.length > 0) {
                 const grid = `!${start}:${end}`;
-                url = `${REACT_APP_GSHEETS_API}${id}/values/${sheet}${grid}?key=${REACT_APP_CHART_TOKEN}`;
+                url = `${GSHEETS_API}${id}/values/${sheet}${grid}?key=${token}`;
             }
 
             this.setState({
@@ -48,12 +55,13 @@ export default class SmartChart extends Component {
                 })
                 .catch(error => {
                     if (error.response && error.response.status === 403) {
-                        this.setState({ authError: true });
+                        this.setState({ authError: true, fetchingData: false });
                     } else {
-                        this.setState({ error: true });
+                        this.setState({ error: true, fetchingData: false });
                     }
-                    this.setState({ error: true });
                 });
+        } else {
+            this.setState({ fetchingData: false });
         }
     }
 
@@ -88,11 +96,7 @@ export default class SmartChart extends Component {
     render() {
         const { cdata, fetchingData, authError, error } = this.state;
         if (fetchingData) {
-            return (
-                <div className="sheets-container">
-                    <div className="loader">Loading</div>
-                </div>
-            );
+            return '';
         }
 
         if (authError) {
@@ -144,12 +148,7 @@ export default class SmartChart extends Component {
         const chart = getChart(data, maintainAspectRatio, this.props);
         return (
             <div>
-                <div
-                    className="in-container sheets-container shadow"
-                    style={style}
-                >
-                    {chart}
-                </div>
+                <div style={style}>{chart}</div>
             </div>
         );
     }
