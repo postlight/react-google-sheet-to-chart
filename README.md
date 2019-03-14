@@ -84,6 +84,8 @@ Example:
     />
 ```
 
+![Robo Chart preview](static/images/robo-chart-2.png)
+
 ## Spreadsheet format
 
 In order to successfuly generate a chart, the Spreadsheet should have Row titles, Column titles and Values, example:
