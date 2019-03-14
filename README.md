@@ -20,6 +20,18 @@ Check out the [Live Demo!](https://robochart.netlify.com/) or the [Live Demo Git
     -   `sheet`: Sheet name to parse data from, e.g. `Sheet1`
     -   `token`: The generated Google API Key
 
+```
+    import RoboChart from '@postlight/react-google-sheet-to-chart';
+
+    ...
+
+    <RoboChart
+        id="GOOGLE_SPREADSHEET_ID"
+        sheet="Sheet1"
+        token="GENERATED_GOOGLE_API_KEY"
+    />
+```
+
 ## Quick setup
 
 1. [Create a react app](https://github.com/facebook/create-react-app)
