@@ -1,4 +1,4 @@
-![Robo Chart preview](https://raw.githubusercontent.com/postlight/react-google-sheet-to-chart/master/static/images/robo-chart.png)
+![Robo Chart preview](https://raw.githubusercontent.com/postlight/react-google-sheet-to-chart/master/static/images/robo-chart.gif)
 
 Transform Google sheets to attractive charts using this React Component.
 
@@ -73,10 +73,10 @@ export default App;
 - `start` e.g. "A5" (`start` and `end` create a custom range for your data)
 - `end` e.g. "E15"
 - `title` This is the chart title, e.g. "My Accounts"
-- `flipAxis` e.g {false}
-- `startFrom` e.g. {0}
-- `stacked` e.g. {false}
-- `type` one of: "line", "bar", "horizontalBar", "stacked", "pie", "semi-pie", "doughnut", "semi-doughnut"
+- `flipAxis` default: {false}
+- `startFrom` default: {0}
+- `stacked` Use only with type bar, default: {false}
+- `type` default: "line", should be one of: "line", "bar", "horizontalBar", "pie", "semi-pie", "doughnut", "semi-doughnut"
 - `colors` e.g. {['#a1a1a1', '#434343', '#ff0055']}
 
 Example:
