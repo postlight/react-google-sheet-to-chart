@@ -1,4 +1,4 @@
-![Robo Chart preview](static/images/robo-chart.png)
+![Robo Chart preview](https://raw.githubusercontent.com/postlight/react-google-sheet-to-chart/master/static/images/robo-chart.png)
 
 Transform Google sheets to pretty charts using this React Component!
 
@@ -84,13 +84,13 @@ Example:
     />
 ```
 
-![Robo Chart preview](static/images/robo-chart-2.png)
+![Robo Chart preview](https://raw.githubusercontent.com/postlight/react-google-sheet-to-chart/master/static/images/robo-chart-2.png)
 
 ## Spreadsheet format
 
 In order to successfuly generate a chart, the Spreadsheet should have Row titles, Column titles and Values, example:
 
-![Spreadsheet example](static/images/spreadsheet-format.png)
+![Spreadsheet example](https://raw.githubusercontent.com/postlight/react-google-sheet-to-chart/master/static/images/spreadsheet-format.png)
 
 ## License
 
