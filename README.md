@@ -1,24 +1,32 @@
 ![Robo Chart preview](https://raw.githubusercontent.com/postlight/react-google-sheet-to-chart/master/static/images/robo-chart.png)
 
-Transform Google sheets to pretty charts using this React Component!
+Transform Google sheets to attractive charts using this React Component.
 
-Check out the [Live Demo!](https://robochart.netlify.com/) or the [Live Demo GitHub Repository](https://github.com/postlight/robo-chart-web)
+Check out the [Live Demo](https://robochart.netlify.com/) or the [Live Demo GitHub Repository](https://github.com/postlight/robo-chart-web)
 
-## How to Install & Use
+## Installation
 
 - The package can be installed via NPM:
 
-  > npm install @postlight/react-google-sheet-to-chart --save
+```bash
+npm install @postlight/react-google-sheet-to-chart --save
 
-- Generate a Google API Key: https://console.cloud.google.com/apis/credentials
+# or 
 
-- Make sure you have a Google sheet document containing the data you wish to plot, check [the format](#spreadsheet-format) you need to use
+yarn add @postlight/react-google-sheet-to-chart
+```
 
-- Import the react component and initialize it with at least three required props:
+## Usage
+
+To use this component, you'll need a Google API key. You can generate one [here](https://console.cloud.google.com/apis/credentials).
+
+Second, you'll need a Google Sheet containing the data you wish to plot. (Be sure to check out [the spreadsheet format](#spreadsheet-format) guidelines.)
+
+Finally, import the React component and initialize it with at least three required props:
 
   - `id`: Spreadsheet ID, e.g. `1RE_JYUCXBXY2LNV5Tp5GegLnMue-CpfTVMxjdudZ8Js` (extractable from a Google sheet URL)
   - `sheet`: Sheet name to parse data from, e.g. `Sheet1`
-  - `token`: The generated Google API Key
+  - `token`: The Google API key you created above
 
 ```
     import RoboChart from '@postlight/react-google-sheet-to-chart';
@@ -34,7 +42,7 @@ Check out the [Live Demo!](https://robochart.netlify.com/) or the [Live Demo Git
 
 ## Quick setup
 
-1. [Create a react app](https://github.com/facebook/create-react-app)
+1. [Create a React app](https://github.com/facebook/create-react-app)
 2. Install the package `npm install @postlight/react-google-sheet-to-chart --save`
 3. Paste the following in `App.js` and replace `GOOGLE_SPREADSHEET_ID` and `GENERATED_GOOGLE_API_KEY` with appropriate values:
 
@@ -60,11 +68,11 @@ Check out the [Live Demo!](https://robochart.netlify.com/) or the [Live Demo Git
     export default App;
 ```
 
-## Other possible props
+## Optional props
 
-- `start` e.g. "A5"
+- `start` e.g. "A5" (`start` and `end` create a custom range for your data)
 - `end` e.g. "E15"
-- `title` e.g. "My Accounts"
+- `title` This is the chart title, e.g. "My Accounts"
 - `flipAxis` e.g {false}
 - `startFrom` e.g. {0}
 - `stacked` e.g. {false}
