@@ -6,7 +6,7 @@ Check out the [Live Demo](https://robochart.netlify.com/) or the [Live Demo GitH
 
 ## Installation
 
-- The package can be installed via NPM:
+The package can be installed via NPM:
 
 ```bash
 npm install @postlight/react-google-sheet-to-chart --save
