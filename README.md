@@ -29,15 +29,15 @@ Finally, import the React component and initialize it with at least three requir
   - `token`: The Google API key you created above
 
 ```javascript
-    import RoboChart from '@postlight/react-google-sheet-to-chart';
+import RoboChart from '@postlight/react-google-sheet-to-chart';
 
-    // ...your component code and then...
+// ...your component code and then...
 
-    <RoboChart
-        id="GOOGLE_SPREADSHEET_ID"
-        sheet="Sheet1"
-        token="GENERATED_GOOGLE_API_KEY"
-    />
+<RoboChart
+    id="GOOGLE_SPREADSHEET_ID"
+    sheet="Sheet1"
+    token="GENERATED_GOOGLE_API_KEY"
+/>
 ```
 
 ## Quick setup
@@ -47,25 +47,25 @@ Finally, import the React component and initialize it with at least three requir
 3. Paste the following in `App.js` and replace `GOOGLE_SPREADSHEET_ID` and `GENERATED_GOOGLE_API_KEY` with appropriate values:
 
 ```
-    import React, { Component } from 'react';
-    import RoboChart from '@postlight/react-google-sheet-to-chart';
-    import './App.css';
+import React, { Component } from 'react';
+import RoboChart from '@postlight/react-google-sheet-to-chart';
+import './App.css';
 
-    const style = { width: '1200px', margin: '0 auto' };
-    class App extends Component {
-        render() {
-            return (
-                <div style={style}>
-                    <RoboChart
-                        id="GOOGLE_SPREADSHEET_ID"
-                        sheet="Sheet1"
-                        token="GENERATED_GOOGLE_API_KEY"
-                    />
-                </div>
-            );
-        }
+const style = { width: '1200px', margin: '0 auto' };
+class App extends Component {
+    render() {
+        return (
+            <div style={style}>
+                <RoboChart
+                    id="GOOGLE_SPREADSHEET_ID"
+                    sheet="Sheet1"
+                    token="GENERATED_GOOGLE_API_KEY"
+                />
+            </div>
+        );
     }
-    export default App;
+}
+export default App;
 ```
 
 ## Optional props
