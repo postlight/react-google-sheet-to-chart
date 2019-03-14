@@ -34,9 +34,9 @@ import RoboChart from '@postlight/react-google-sheet-to-chart';
 // ...your component code and then...
 
 <RoboChart
-    id="GOOGLE_SPREADSHEET_ID"
-    sheet="Sheet1"
-    token="GENERATED_GOOGLE_API_KEY"
+  id="GOOGLE_SPREADSHEET_ID"
+  sheet="Sheet1"
+  token="GENERATED_GOOGLE_API_KEY"
 />
 ```
 
@@ -53,17 +53,17 @@ import './App.css';
 
 const style = { width: '1200px', margin: '0 auto' };
 class App extends Component {
-    render() {
-        return (
-            <div style={style}>
-                <RoboChart
-                    id="GOOGLE_SPREADSHEET_ID"
-                    sheet="Sheet1"
-                    token="GENERATED_GOOGLE_API_KEY"
-                />
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div style={style}>
+        <RoboChart
+          id="GOOGLE_SPREADSHEET_ID"
+          sheet="Sheet1"
+          token="GENERATED_GOOGLE_API_KEY"
+        />
+      </div>
+    );
+  }
 }
 export default App;
 ```
@@ -83,12 +83,12 @@ Example:
 
 ```javascript
 <RoboChart
-    id="GOOGLE_SPREADSHEET_ID"
-    sheet="Companies Values"
-    token="GENERATED_GOOGLE_API_KEY"
-    type="semi-pie"
-    title="Companies values in Billion $"
-    colors={['#a1a1a1', '#995500', '#990055', '#009955']}
+  id="GOOGLE_SPREADSHEET_ID"
+  sheet="Companies Values"
+  token="GENERATED_GOOGLE_API_KEY"
+  type="semi-pie"
+  title="Companies values in Billion $"
+  colors={['#a1a1a1', '#995500', '#990055', '#009955']}
 />
 ```
 
