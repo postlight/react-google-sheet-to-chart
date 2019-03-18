@@ -78,6 +78,8 @@ export default App;
 - `stacked` Use only with type bar, default: {false}
 - `type` default: "line", should be one of: "line", "bar", "horizontalBar", "pie", "semi-pie", "doughnut", "semi-doughnut"
 - `colors` e.g. {['#a1a1a1', '#434343', '#ff0055']}
+- `xsuffix` Add a suffix to x-Axis labels, e.g. " USD"
+- `ysuffix` Add a suffix to y-Axis labels
 
 Example:
 
