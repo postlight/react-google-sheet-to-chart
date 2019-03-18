@@ -7,17 +7,17 @@ const options = {
       left: 10,
       right: 10,
       top: 10,
-      bottom: 10
-    }
+      bottom: 10,
+    },
   },
   title: {
     display: false,
     text: '',
     fontSize: 20,
-    padding: 20
+    padding: 20,
   },
   legend: {
-    position: 'bottom'
+    position: 'bottom',
   },
   scales: {
     xAxes: [
@@ -27,9 +27,9 @@ const options = {
         labels: [],
         id: 'x-axis-1',
         ticks: {
-          beginAtZero: true
-        }
-      }
+          beginAtZero: true,
+        },
+      },
     ],
     yAxes: [
       {
@@ -37,11 +37,11 @@ const options = {
         position: 'left',
         id: 'y-axis-1',
         ticks: {
-          beginAtZero: true
-        }
-      }
-    ]
-  }
+          beginAtZero: true,
+        },
+      },
+    ],
+  },
 };
 
 export default options;

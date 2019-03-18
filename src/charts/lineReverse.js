@@ -14,7 +14,7 @@ const getLineReverseChartData = (data, colors) => {
     info: [],
     annotations: [],
     options,
-    colors: []
+    colors: [],
   };
 
   let columnCount = 0;
