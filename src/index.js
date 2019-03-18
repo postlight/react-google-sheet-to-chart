@@ -12,7 +12,7 @@ export default class SmartChart extends Component {
     cdata: {},
     fetchingData: false,
     authError: false,
-    error: false
+    error: false,
   };
 
   /**
@@ -44,7 +44,7 @@ export default class SmartChart extends Component {
       this.setState({
         fetchingData: true,
         authError: false,
-        error: false
+        error: false,
       });
 
       axios
@@ -77,7 +77,7 @@ export default class SmartChart extends Component {
         const tempProcessedData = processSpreadsheet(
           res.data.values,
           processedData.startr + 1,
-          processedData.startc + 1
+          processedData.startc + 1,
         );
         if (
           tempProcessedData &&

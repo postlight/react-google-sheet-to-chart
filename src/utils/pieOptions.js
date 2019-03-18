@@ -8,8 +8,8 @@ const options = {
     display: true,
     text: '',
     fontSize: 20,
-    padding: 20
-  }
+    padding: 20,
+  },
 };
 
 export default options;

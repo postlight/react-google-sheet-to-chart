@@ -12,10 +12,10 @@ const getPieChartData = (data, semi, colors) => {
   const chartData = {
     data: {
       datasets: [],
-      labels: []
+      labels: [],
     },
     options,
-    colors: []
+    colors: [],
   };
 
   if (semi) {

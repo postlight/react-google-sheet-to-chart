@@ -7,26 +7,26 @@ const options = {
       left: 10,
       right: 10,
       top: 10,
-      bottom: 10
-    }
+      bottom: 10,
+    },
   },
   hover: {
     mode: 'x',
-    intersect: false
+    intersect: false,
   },
   title: {
     display: true,
     text: '',
     fontSize: 20,
-    padding: 20
+    padding: 20,
   },
   legend: {
-    position: 'bottom'
+    position: 'bottom',
   },
   tooltips: {
     mode: 'x',
     intersect: false,
-    callbacks: {}
+    callbacks: {},
   },
   scales: {
     xAxes: [
@@ -38,9 +38,9 @@ const options = {
         id: 'x-axis-1',
         ticks: {
           beginAtZero: true,
-          min: 0
-        }
-      }
+          min: 0,
+        },
+      },
     ],
     yAxes: [
       {
@@ -50,19 +50,19 @@ const options = {
         position: 'left',
         id: 'y-axis-1',
         ticks: {
-          beginAtZero: true
+          beginAtZero: true,
         },
         gridLines: {
           zeroLineColor: '#888',
           zeroLineWidth: 2,
-          display: true
+          display: true,
         },
         labels: {
-          show: true
-        }
-      }
-    ]
-  }
+          show: true,
+        },
+      },
+    ],
+  },
 };
 
 export default options;
