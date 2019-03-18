@@ -69,7 +69,7 @@ const getChart = (data, maintainAspectRatio, props) => {
       handleOptions(
         chartData.options,
         maintainAspectRatio,
-        chartTitle,
+        title,
         startFrom,
         xsuffix,
         ysuffix,
@@ -90,7 +90,7 @@ const getChart = (data, maintainAspectRatio, props) => {
       handleOptions(
         chartData.options,
         maintainAspectRatio,
-        chartTitle,
+        title,
         startFrom,
         xsuffix,
         ysuffix,
@@ -111,7 +111,7 @@ const getChart = (data, maintainAspectRatio, props) => {
       handleOptions(
         chartData.options,
         maintainAspectRatio,
-        chartTitle,
+        title,
         startFrom,
         xsuffix,
         ysuffix,
@@ -134,7 +134,7 @@ const getChart = (data, maintainAspectRatio, props) => {
       }
 
       chartData.options.maintainAspectRatio = maintainAspectRatio;
-      chartData.options.title.text = chartTitle;
+      chartData.options.title.text = title;
       chart = (
         <Pie key={chartKey} data={chartData.data} options={chartData.options} />
       );
@@ -147,7 +147,7 @@ const getChart = (data, maintainAspectRatio, props) => {
       }
 
       chartData.options.maintainAspectRatio = maintainAspectRatio;
-      chartData.options.title.text = chartTitle;
+      chartData.options.title.text = title;
       chart = (
         <Pie key={chartKey} data={chartData.data} options={chartData.options} />
       );
@@ -160,7 +160,7 @@ const getChart = (data, maintainAspectRatio, props) => {
       }
 
       chartData.options.maintainAspectRatio = maintainAspectRatio;
-      chartData.options.title.text = chartTitle;
+      chartData.options.title.text = title;
       chart = (
         <Doughnut
           key={chartKey}
@@ -177,7 +177,7 @@ const getChart = (data, maintainAspectRatio, props) => {
       }
 
       chartData.options.maintainAspectRatio = maintainAspectRatio;
-      chartData.options.title.text = chartTitle;
+      chartData.options.title.text = title;
       chart = (
         <Doughnut
           key={chartKey}
