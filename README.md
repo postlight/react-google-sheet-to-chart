@@ -1,8 +1,11 @@
+# React Google Sheet to Chart
+
+[Postlight](https://postlight.com)'s React Google Sheet to Chart React component transforms Google Sheets to attractive charts in your webapp with minimal effort. Read all about it in [this handy introduction](https://postlight.com/trackchanges/transform-google-sheets-into-beautiful-charts-with-postlights-new-react-component).
+
+Try it now at the [demo site](https://robochart.netlify.com/) and check out the [demo site GitHub repository](https://github.com/postlight/robo-chart-web).
+
 ![Robo Chart preview](https://raw.githubusercontent.com/postlight/react-google-sheet-to-chart/master/static/images/robo-chart.gif)
 
-Transform Google sheets to attractive charts using this React Component.
-
-Check out the [Live Demo](https://robochart.netlify.com/) or the [Live Demo GitHub Repository](https://github.com/postlight/robo-chart-web)
 
 ## Installation
 
@@ -132,4 +135,4 @@ Unless it is explicitly stated otherwise, any contribution intentionally submitt
 
 ---
 
-🔬 A Labs project from your friends at [Postlight](https://postlight.com/labs)
+🔬 A Labs project from your friends at [Postlight](https://postlight.com). Happy coding!
