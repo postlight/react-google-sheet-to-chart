@@ -14,7 +14,7 @@ The package can be installed via NPM:
 ```bash
 npm install @postlight/react-google-sheet-to-chart --save
 
-# or 
+# or
 
 yarn add @postlight/react-google-sheet-to-chart
 ```
@@ -48,14 +48,13 @@ import RoboChart from '@postlight/react-google-sheet-to-chart';
 - [Create a React app](https://github.com/facebook/create-react-app):
 
 ```shell
-npx create-react-app my-app
+yarn create react-app my-app
 cd my-app
-npm install
 ```
 - Install the package
 
 ```shell
-npm install @postlight/react-google-sheet-to-chart --save
+yarn add @postlight/react-google-sheet-to-chart
 ```
 - Paste the following in `App.js` and replace `GOOGLE_SPREADSHEET_ID` and `GENERATED_GOOGLE_API_KEY` with appropriate values:
 
@@ -83,7 +82,7 @@ export default App;
 - Start the project
 
 ```shell
-npm start
+yarn start
 ```
 
 ## Optional props
