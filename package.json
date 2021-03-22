@@ -9,8 +9,7 @@
     "randomcolor": "^0.5.4",
     "react": "^16.8.4",
     "react-chartjs-2": "^2.7.4",
-    "react-dom": "^16.8.4",
-    "webpack": "^4.44.2"
+    "react-dom": "^16.8.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -45,6 +44,7 @@
     "@babel/plugin-transform-react-jsx": "^7.3.0",
     "@babel/preset-env": "^7.3.4",
     "babel-loader": "^8.0.5",
+    "webpack": "^5.27.2",
     "webpack-cli": "^3.3.12"
   }
 }
