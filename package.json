@@ -1,16 +1,16 @@
 {
   "name": "@postlight/react-google-sheet-to-chart",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Transform Google sheets to pretty charts!",
   "main": "build/index.js",
   "dependencies": {
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
     "axios": "^0.21.1",
-    "webpack": "^4.29.6",
+    "chart.js": "^2.7.4",
+    "randomcolor": "^0.5.4",
+    "react": "^16.8.4",
     "react-chartjs-2": "^2.7.4",
-    "chart.js": "^2.7.3",
-    "randomcolor": "^0.5.4"
+    "react-dom": "^16.8.4",
+    "webpack": "^4.44.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
