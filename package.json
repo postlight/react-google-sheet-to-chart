@@ -6,7 +6,7 @@
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "webpack": "^4.29.6",
     "react-chartjs-2": "^2.7.4",
     "chart.js": "^2.7.3",
