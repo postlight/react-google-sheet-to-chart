@@ -4,7 +4,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'index.js',
-    libraryTarget: 'commonjs2' // THIS IS THE MOST IMPORTANT LINE! :mindblow: I wasted more than 2 days until realize this was the line most important in all this guide.
+    libraryTarget: 'commonjs2',
   },
   mode: 'production',
   module: {
@@ -20,14 +20,14 @@ module.exports = {
             plugins: [
               '@babel/plugin-proposal-object-rest-spread',
               '@babel/plugin-transform-react-jsx',
-              '@babel/plugin-proposal-class-properties'
-            ]
-          }
-        }
-      }
-    ]
+              '@babel/plugin-proposal-class-properties',
+            ],
+          },
+        },
+      },
+    ],
   },
   externals: {
-    react: 'commonjs react' // this line is just to use the React dependency of our parent-testing-project instead of using our own React.
-  }
+    react: 'commonjs react',
+  },
 };
