@@ -1,5 +1,6 @@
-import React from 'react';
 import { Line, Bar, Pie, Doughnut } from 'react-chartjs-2';
+import 'chart.js/auto';
+
 import getLineChartData from './charts/line';
 import getLineReverseChartData from './charts/lineReverse';
 import getHorizontalBarChartData from './charts/horizontalBar';
