@@ -1,5 +1,6 @@
 // predefined chart options for horizontal bar charts
 const options = {
+  indexAxis: 'y',
   responsive: true,
   maintainAspectRatio: false,
   layout: {
