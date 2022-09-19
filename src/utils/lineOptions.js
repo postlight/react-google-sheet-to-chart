@@ -14,54 +14,52 @@ const options = {
     mode: 'x',
     intersect: false,
   },
-  title: {
-    display: true,
-    text: '',
-    fontSize: 20,
-    padding: 20,
-  },
-  legend: {
-    position: 'bottom',
-  },
-  tooltips: {
-    mode: 'x',
-    intersect: false,
-    callbacks: {},
-  },
   scales: {
-    xAxes: [
-      {
-        stacked: false,
-        display: true,
-        gridLines: { display: false },
-        labels: [],
-        id: 'x-axis-1',
-        ticks: {
-          beginAtZero: true,
-          min: 0,
-        },
+    x: {
+      stacked: false,
+      display: true,
+      grid: { display: false },
+      labels: [],
+      id: 'x-axis-1',
+      ticks: {
+        beginAtZero: true,
+        min: 0,
       },
-    ],
-    yAxes: [
-      {
-        stacked: false,
-        type: 'linear',
-        display: true,
-        position: 'left',
-        id: 'y-axis-1',
-        ticks: {
-          beginAtZero: true,
-        },
-        gridLines: {
-          zeroLineColor: '#888',
-          zeroLineWidth: 2,
-          display: true,
-        },
-        labels: {
-          show: true,
-        },
+    },
+    y: {
+      stacked: false,
+      type: 'linear',
+      display: true,
+      position: 'left',
+      id: 'y-axis-1',
+      ticks: {
+        beginAtZero: true,
       },
-    ],
+      grid: {
+        borderColor: '#888',
+        borderWidth: 2,
+        display: true,
+      },
+      labels: {
+        show: true,
+      },
+    },
+  },
+  plugins: {
+    title: {
+      display: true,
+      text: '',
+      fontSize: 20,
+      padding: 20,
+    },
+    legend: {
+      position: 'bottom',
+    },
+    tooltip: {
+      mode: 'x',
+      intersect: false,
+      callbacks: {},
+    },
   },
 };
 

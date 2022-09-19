@@ -21,27 +21,23 @@ const options = {
     position: 'bottom',
   },
   scales: {
-    xAxes: [
-      {
-        display: true,
-        gridLines: { display: false },
-        labels: [],
-        id: 'x-axis-1',
-        ticks: {
-          beginAtZero: true,
-        },
+    x: {
+      display: true,
+      grid: { display: false },
+      labels: [],
+      id: 'x-axis-1',
+      ticks: {
+        beginAtZero: true,
       },
-    ],
-    yAxes: [
-      {
-        display: true,
-        position: 'left',
-        id: 'y-axis-1',
-        ticks: {
-          beginAtZero: true,
-        },
+    },
+    y: {
+      display: true,
+      position: 'left',
+      id: 'y-axis-1',
+      ticks: {
+        beginAtZero: true,
       },
-    ],
+    },
   },
 };
 

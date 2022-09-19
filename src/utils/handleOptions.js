@@ -20,19 +20,19 @@ const handleOptions = (
   options.maintainAspectRatio = maintainAspectRatio;
   options.title.text = chartTitle;
   if (startFrom !== 0) {
-    options.scales.xAxes[0].ticks.beginAtZero = false;
-    options.scales.yAxes[0].ticks.beginAtZero = false;
-    options.scales.xAxes[0].ticks.min = parseFloat(startFrom);
-    options.scales.yAxes[0].ticks.min = parseFloat(startFrom);
+    options.scales.y.beginAtZero = false;
+    options.scales.x.beginAtZero = false;
+    options.scales.x.min = parseFloat(startFrom);
+    options.scales.y.min = parseFloat(startFrom);
   } else {
-    options.scales.xAxes[0].ticks = { beginAtZero: true };
-    options.scales.yAxes[0].ticks = { beginAtZero: true };
+    options.scales.x.ticks = { beginAtZero: true };
+    options.scales.y.ticks = { beginAtZero: true };
   }
 
-  options.scales.xAxes[0].ticks.callback = value => {
+  options.scales.x.ticks.callback = (value) => {
     return `${value}${xsuffix}`;
   };
-  options.scales.yAxes[0].ticks.callback = value => {
+  options.scales.y.ticks.callback = (value) => {
     return `${value}${ysuffix}`;
   };
 };
