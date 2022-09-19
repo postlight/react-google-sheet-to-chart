@@ -122,16 +122,14 @@ const SmartChart = (props) => {
     return '';
   }
 
-  let dimensions = [];
   let maintainAspectRatio = true;
+  let style = {};
   if (window.innerWidth < 900) {
     maintainAspectRatio = false;
-    dimensions = getSmallScreenChartDimensions(window.innerWidth);
-  }
-
-  let style = {};
-  if (dimensions.length > 0) {
-    style = { width: dimensions[0], height: dimensions[1] };
+    const [width, height] = getSmallScreenChartDimensions(window.innerWidth);
+    if (width && height) {
+      style = { width, height };
+    }
   }
 
   const chart = getChart(data, maintainAspectRatio, props);
