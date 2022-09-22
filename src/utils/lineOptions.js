@@ -16,6 +16,11 @@ const options = {
     mode: 'x',
     intersect: false,
   },
+  elements: {
+    line: {
+      tension: 0.4,
+    },
+  },
   scales: {
     x: {
       stacked: false,
