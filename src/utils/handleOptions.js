@@ -29,8 +29,9 @@ const handleOptions = (
     options.scales.y.ticks = { beginAtZero: true };
   }
 
-  options.scales.x.ticks.callback = (value) => {
-    return `${value}${xsuffix}`;
+  options.scales.x.ticks.callback = function (value) {
+    const label = this.chart.scales.x.getLabelForValue(value);
+    return `${label}${xsuffix}`;
   };
   options.scales.y.ticks.callback = (value) => {
     return `${value}${ysuffix}`;
