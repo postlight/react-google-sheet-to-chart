@@ -18,7 +18,7 @@ const handleOptions = (
   ysuffix,
 ) => {
   options.maintainAspectRatio = maintainAspectRatio;
-  options.title.text = chartTitle;
+  options.plugins.title.text = chartTitle;
   if (startFrom !== 0) {
     options.scales.y.beginAtZero = false;
     options.scales.x.beginAtZero = false;

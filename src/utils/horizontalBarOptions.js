@@ -11,15 +11,6 @@ const options = {
       bottom: 10,
     },
   },
-  title: {
-    display: false,
-    text: '',
-    fontSize: 20,
-    padding: 20,
-  },
-  legend: {
-    position: 'bottom',
-  },
   scales: {
     x: {
       display: true,
@@ -37,6 +28,17 @@ const options = {
       ticks: {
         beginAtZero: true,
       },
+    },
+  },
+  plugins: {
+    title: {
+      display: false,
+      text: '',
+      fontSize: 20,
+      padding: 20,
+    },
+    legend: {
+      position: 'bottom',
     },
   },
 };

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 import processSpreadsheet from './utils/processSpreadsheet';
@@ -9,7 +9,6 @@ const GSHEETS_API = 'https://sheets.googleapis.com/v4/spreadsheets/';
  * SmartChart component
  */
 const SmartChart = (props) => {
-  const chartRef = useRef(null);
   const [cdata, setCdata] = useState({});
   const [fetchingData, setFetchingData] = useState(false);
   const [authError, setAuthError] = useState(false);
@@ -19,12 +18,6 @@ const SmartChart = (props) => {
    * Query Google sheets once the component mounts
    */
   useEffect(() => {
-    const chart = chartRef.current;
-
-    if (!chart) {
-      return;
-    }
-
     /**
      * Compose and run query using app state
      */
@@ -139,7 +132,7 @@ const SmartChart = (props) => {
     }
   }
 
-  const chart = getChart(data, maintainAspectRatio, chartRef, props);
+  const chart = getChart(data, maintainAspectRatio, props);
   return (
     <div>
       <div style={style}>{chart}</div>

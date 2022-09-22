@@ -1,3 +1,5 @@
+import { Chart } from 'chart.js';
+
 // predefined chart options for line charts
 const options = {
   responsive: true,
@@ -18,7 +20,9 @@ const options = {
     x: {
       stacked: false,
       display: true,
-      grid: { display: false },
+      grid: {
+        display: false,
+      },
       labels: [],
       id: 'x-axis-1',
       ticks: {
@@ -36,8 +40,9 @@ const options = {
         beginAtZero: true,
       },
       grid: {
-        borderColor: '#888',
-        borderWidth: 2,
+        color: (context) =>
+          context.tick.value === 0 ? '#888' : Chart.defaults.borderColor,
+        lineWidth: (context) => (context.tick.value === 0 ? 2 : 1),
         display: true,
       },
       labels: {
