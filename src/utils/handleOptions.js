@@ -35,7 +35,7 @@ const handleOptions = (
   };
   options.scales.y.ticks.callback = function (value) {
     const label = this.chart.scales.y.getLabelForValue(value);
-    return `${label}${xsuffix}`;
+    return `${label}${ysuffix}`;
   };
 };
 
