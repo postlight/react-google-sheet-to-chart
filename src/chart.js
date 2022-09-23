@@ -65,6 +65,7 @@ const getChart = (data, maintainAspectRatio, props) => {
         maintainAspectRatio,
         title,
         startFrom,
+        type,
         xsuffix,
         ysuffix,
       );
@@ -86,6 +87,7 @@ const getChart = (data, maintainAspectRatio, props) => {
         maintainAspectRatio,
         title,
         startFrom,
+        type,
         xsuffix,
         ysuffix,
       );
@@ -107,9 +109,11 @@ const getChart = (data, maintainAspectRatio, props) => {
         maintainAspectRatio,
         title,
         startFrom,
+        type,
         xsuffix,
         ysuffix,
       );
+      chartData.options.scales.x.min=10
 
       datasets = { datasets: chartData.datasets, labels: chartData.labels };
       chart = (

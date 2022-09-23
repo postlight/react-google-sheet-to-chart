@@ -30,9 +30,9 @@ const options = {
       },
       labels: [],
       id: 'x-axis-1',
+      min: 0,
       ticks: {
         beginAtZero: true,
-        min: 0,
       },
     },
     y: {
