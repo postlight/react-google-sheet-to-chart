@@ -113,7 +113,6 @@ const getChart = (data, maintainAspectRatio, props) => {
         xsuffix,
         ysuffix,
       );
-      chartData.options.scales.x.min=10
 
       datasets = { datasets: chartData.datasets, labels: chartData.labels };
       chart = (
