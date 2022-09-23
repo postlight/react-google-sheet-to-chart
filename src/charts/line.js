@@ -60,7 +60,7 @@ const getLineChartData = (data, colors) => {
     }
   });
 
-  chartData.options.scales.xAxes[0].labels = chartData.labels;
+  chartData.options.scales.x.labels = chartData.labels;
   return chartData;
 };
 

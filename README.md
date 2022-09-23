@@ -6,7 +6,6 @@ Try it now at the [demo site](https://robochart.netlify.com/) and check out the 
 
 ![Robo Chart preview](https://raw.githubusercontent.com/postlight/react-google-sheet-to-chart/master/static/images/robo-chart.gif)
 
-
 ## Installation
 
 The package can be installed via NPM:
@@ -21,15 +20,15 @@ yarn add @postlight/react-google-sheet-to-chart
 
 ## Usage
 
-To use this component, you'll need a Google API key. You can generate one [here](https://console.cloud.google.com/apis/credentials).
+To use this component, you'll need a Google API key. First **enable** Google Sheets API and then generate the API Key [here](https://console.cloud.google.com/apis/credentials) and restrict it to HTTP referrers (web sites).
 
 Second, you'll need a Google Sheet containing the data you wish to plot. (Be sure to check out [the spreadsheet format](#spreadsheet-format) guidelines.)
 
 Finally, import the React component and initialize it with at least three required props:
 
-  - `id`: Spreadsheet ID, e.g. `1RE_JYUCXBXY2LNV5Tp5GegLnMue-CpfTVMxjdudZ8Js` (extractable from a Google sheet URL)
-  - `sheet`: Sheet name to parse data from, e.g. `Sheet1`
-  - `token`: The Google API key you created above
+- `id`: Spreadsheet ID, e.g. `1RE_JYUCXBXY2LNV5Tp5GegLnMue-CpfTVMxjdudZ8Js` (extractable from a Google sheet URL)
+- `sheet`: Sheet name to parse data from, e.g. `Sheet1`
+- `token`: The Google API key you created above
 
 ```javascript
 import RoboChart from '@postlight/react-google-sheet-to-chart';
@@ -40,7 +39,7 @@ import RoboChart from '@postlight/react-google-sheet-to-chart';
   id="GOOGLE_SPREADSHEET_ID"
   sheet="Sheet1"
   token="GENERATED_GOOGLE_API_KEY"
-/>
+/>;
 ```
 
 ## Quick setup in an app
@@ -51,11 +50,13 @@ import RoboChart from '@postlight/react-google-sheet-to-chart';
 yarn create react-app my-app
 cd my-app
 ```
+
 - Install the package
 
 ```shell
 yarn add @postlight/react-google-sheet-to-chart
 ```
+
 - Paste the following in `App.js` and replace `GOOGLE_SPREADSHEET_ID` and `GENERATED_GOOGLE_API_KEY` with appropriate values:
 
 ```javascript
@@ -79,6 +80,7 @@ class App extends Component {
 }
 export default App;
 ```
+
 - Start the project
 
 ```shell

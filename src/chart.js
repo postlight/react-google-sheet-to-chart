@@ -1,5 +1,7 @@
 import React from 'react';
-import { Line, Bar, HorizontalBar, Pie, Doughnut } from 'react-chartjs-2';
+import { Line, Bar, Pie, Doughnut } from 'react-chartjs-2';
+import 'chart.js/auto';
+
 import getLineChartData from './charts/line';
 import getLineReverseChartData from './charts/lineReverse';
 import getHorizontalBarChartData from './charts/horizontalBar';
@@ -12,16 +14,8 @@ import handleOptions from './utils/handleOptions';
 
 const getChart = (data, maintainAspectRatio, props) => {
   const { sheet } = props;
-  let {
-    startFrom,
-    flipAxis,
-    stacked,
-    type,
-    title,
-    colors,
-    xsuffix,
-    ysuffix,
-  } = props;
+  let { startFrom, flipAxis, stacked, type, title, colors, xsuffix, ysuffix } =
+    props;
 
   let chartData = {};
   let datasets = {};
@@ -71,6 +65,7 @@ const getChart = (data, maintainAspectRatio, props) => {
         maintainAspectRatio,
         title,
         startFrom,
+        type,
         xsuffix,
         ysuffix,
       );
@@ -92,6 +87,7 @@ const getChart = (data, maintainAspectRatio, props) => {
         maintainAspectRatio,
         title,
         startFrom,
+        type,
         xsuffix,
         ysuffix,
       );
@@ -113,17 +109,14 @@ const getChart = (data, maintainAspectRatio, props) => {
         maintainAspectRatio,
         title,
         startFrom,
+        type,
         xsuffix,
         ysuffix,
       );
 
       datasets = { datasets: chartData.datasets, labels: chartData.labels };
       chart = (
-        <HorizontalBar
-          key={chartKey}
-          data={datasets}
-          options={chartData.options}
-        />
+        <Bar key={chartKey} data={datasets} options={chartData.options} />
       );
       break;
     case 'pie':
@@ -134,7 +127,7 @@ const getChart = (data, maintainAspectRatio, props) => {
       }
 
       chartData.options.maintainAspectRatio = maintainAspectRatio;
-      chartData.options.title.text = title;
+      chartData.options.plugins.title.text = title;
       chart = (
         <Pie key={chartKey} data={chartData.data} options={chartData.options} />
       );
@@ -147,7 +140,7 @@ const getChart = (data, maintainAspectRatio, props) => {
       }
 
       chartData.options.maintainAspectRatio = maintainAspectRatio;
-      chartData.options.title.text = title;
+      chartData.options.plugins.title.text = title;
       chart = (
         <Pie key={chartKey} data={chartData.data} options={chartData.options} />
       );
@@ -160,7 +153,7 @@ const getChart = (data, maintainAspectRatio, props) => {
       }
 
       chartData.options.maintainAspectRatio = maintainAspectRatio;
-      chartData.options.title.text = title;
+      chartData.options.plugins.title.text = title;
       chart = (
         <Doughnut
           key={chartKey}
@@ -177,7 +170,7 @@ const getChart = (data, maintainAspectRatio, props) => {
       }
 
       chartData.options.maintainAspectRatio = maintainAspectRatio;
-      chartData.options.title.text = title;
+      chartData.options.plugins.title.text = title;
       chart = (
         <Doughnut
           key={chartKey}
