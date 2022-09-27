@@ -1,5 +1,3 @@
-import { Chart } from 'chart.js';
-
 // predefined chart options for line charts
 const options = {
   responsive: true,
@@ -16,60 +14,54 @@ const options = {
     mode: 'x',
     intersect: false,
   },
-  elements: {
-    line: {
-      tension: 0.4,
-    },
+  title: {
+    display: true,
+    text: '',
+    fontSize: 20,
+    padding: 20,
+  },
+  legend: {
+    position: 'bottom',
+  },
+  tooltips: {
+    mode: 'x',
+    intersect: false,
+    callbacks: {},
   },
   scales: {
-    x: {
-      stacked: false,
-      display: true,
-      grid: {
-        display: false,
-      },
-      labels: [],
-      id: 'x-axis-1',
-      min: 0,
-      ticks: {
-        beginAtZero: true,
-      },
-    },
-    y: {
-      stacked: false,
-      type: 'linear',
-      display: true,
-      position: 'left',
-      id: 'y-axis-1',
-      ticks: {
-        beginAtZero: true,
-      },
-      grid: {
-        color: (context) =>
-          context.tick.value === 0 ? '#888' : Chart.defaults.borderColor,
-        lineWidth: (context) => (context.tick.value === 0 ? 2 : 1),
+    xAxes: [
+      {
+        stacked: false,
         display: true,
+        gridLines: { display: false },
+        labels: [],
+        id: 'x-axis-1',
+        ticks: {
+          beginAtZero: true,
+          min: 0,
+        },
       },
-      labels: {
-        show: true,
+    ],
+    yAxes: [
+      {
+        stacked: false,
+        type: 'linear',
+        display: true,
+        position: 'left',
+        id: 'y-axis-1',
+        ticks: {
+          beginAtZero: true,
+        },
+        gridLines: {
+          zeroLineColor: '#888',
+          zeroLineWidth: 2,
+          display: true,
+        },
+        labels: {
+          show: true,
+        },
       },
-    },
-  },
-  plugins: {
-    title: {
-      display: true,
-      text: '',
-      fontSize: 20,
-      padding: 20,
-    },
-    legend: {
-      position: 'bottom',
-    },
-    tooltip: {
-      mode: 'x',
-      intersect: false,
-      callbacks: {},
-    },
+    ],
   },
 };
 

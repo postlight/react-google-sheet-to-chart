@@ -1,6 +1,5 @@
 // predefined chart options for horizontal bar charts
 const options = {
-  indexAxis: 'y',
   responsive: true,
   maintainAspectRatio: false,
   layout: {
@@ -11,35 +10,37 @@ const options = {
       bottom: 10,
     },
   },
-  scales: {
-    x: {
-      display: true,
-      grid: { display: false },
-      labels: [],
-      id: 'x-axis-1',
-      ticks: {
-        beginAtZero: true,
-      },
-    },
-    y: {
-      display: true,
-      position: 'left',
-      id: 'y-axis-1',
-      ticks: {
-        beginAtZero: true,
-      },
-    },
+  title: {
+    display: false,
+    text: '',
+    fontSize: 20,
+    padding: 20,
   },
-  plugins: {
-    title: {
-      display: false,
-      text: '',
-      fontSize: 20,
-      padding: 20,
-    },
-    legend: {
-      position: 'bottom',
-    },
+  legend: {
+    position: 'bottom',
+  },
+  scales: {
+    xAxes: [
+      {
+        display: true,
+        gridLines: { display: false },
+        labels: [],
+        id: 'x-axis-1',
+        ticks: {
+          beginAtZero: true,
+        },
+      },
+    ],
+    yAxes: [
+      {
+        display: true,
+        position: 'left',
+        id: 'y-axis-1',
+        ticks: {
+          beginAtZero: true,
+        },
+      },
+    ],
   },
 };
 

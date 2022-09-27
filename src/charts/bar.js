@@ -61,12 +61,12 @@ const getBarChartData = (data, stacked, colors) => {
     }
   });
 
-  chartData.options.scales.x.labels = chartData.labels;
-  chartData.options.scales.x.stacked = stacked;
-  chartData.options.scales.y.ticks = {
+  chartData.options.scales.xAxes[0].labels = chartData.labels;
+  chartData.options.scales.xAxes[0].stacked = stacked;
+  chartData.options.scales.yAxes[0].ticks = {
     beginAtZero: true,
   };
-  chartData.options.scales.x.ticks = {
+  chartData.options.scales.xAxes[0].ticks = {
     beginAtZero: true,
   };
 
