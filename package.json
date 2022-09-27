@@ -47,7 +47,7 @@
     "@babel/preset-env": "^7.3.4",
     "babel-loader": "^8.0.5",
     "webpack": "^5.27.2",
-    "webpack-cli": "^3.3.12",
+    "webpack-cli": "^4.10.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   }
