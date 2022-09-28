@@ -19,10 +19,10 @@ const getPieReverseChartData = (data, semi, colors) => {
   };
 
   if (semi) {
-    chartData.options.circumference = Math.PI;
-    chartData.options.rotation = -Math.PI;
+    chartData.options.circumference = 180;
+    chartData.options.rotation = -90;
   } else {
-    chartData.options.circumference = 2 * Math.PI;
+    chartData.options.circumference = 360;
     chartData.options.rotation = 0;
   }
 
@@ -57,7 +57,7 @@ const getPieReverseChartData = (data, semi, colors) => {
   });
 
   const finalDatasets = [];
-  chartData.data.datasets.forEach(dataset => {
+  chartData.data.datasets.forEach((dataset) => {
     if (dataset.data.length > 0) {
       finalDatasets.push(dataset);
     }
