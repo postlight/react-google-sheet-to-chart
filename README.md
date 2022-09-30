@@ -121,6 +121,17 @@ In order to successfuly generate a chart, the Spreadsheet should have Row titles
 
 ![Spreadsheet example](https://raw.githubusercontent.com/postlight/react-google-sheet-to-chart/master/static/images/spreadsheet-format.png)
 
+## Chart Types
+
+There are 7 possible chart types:
+- "line": this is default chart type
+- "bar": bar charts can also be stacked by setting the `stacked` prop to `true`
+- "horizontalBar"
+- "pie"
+- "semi-pie"
+- "doughnut"
+- "semi-doughnut"
+
 ## License
 
 Licensed under either of the below, at your preference:
